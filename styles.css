@@ -1,0 +1,110 @@
+* {
+    font-family: "Outfit";
+    color: hsl(30, 10%, 34%);
+}
+
+body {
+     margin : 0;
+     padding: 0;
+     width: 100vph;
+
+}
+
+ul, ol, li {
+    list-style-position: outside; /* Asegura que los puntos estén fuera del contenido */
+    padding-left: 20px; /* Ajusta el espacio entre los puntos y el texto */
+}
+
+.instructions > ol > li::marker {
+    color: hsl(14, 45%, 36%); /* Cambia el color de los números o puntos */
+    font-weight: bold; /* Opcional: hacerlos en negrita */
+}
+
+ul > li::marker {
+    color: hsl(332, 51%, 32%); /* Cambia el color de los números o puntos */
+    font-weight: bold; /* Opcional: hacerlos en negrita */
+}
+
+main {
+    padding: 0px;
+    margin: 30px;
+}
+
+h1 {
+    font-family: "Young Serif", "serif";
+    font-weight: 400;
+    display: flex;
+    line-height: 1;
+    color: black;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.subtitle {
+    font-size: 28px;
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif";
+    font-weight: 400;
+}
+
+.pretime {
+    color: hsl(332, 51%, 32%);
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.pt {
+    background-color: hsl(30, 54%, 90%, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    
+
+}
+
+.ingredients {
+    border-bottom: solid 2px hsl(30, 54%, 90%);
+}
+
+li {
+    line-height: 2;
+}
+
+.table {
+    display: flex; 
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 70px; /* Espacio entre columnas */
+    margin-left: 30px;
+    margin-right: 50px;
+    border-bottom: solid 2px hsl(30, 54%, 90%, 0.7);
+}
+
+.data {
+    color:hsl(14, 45%, 36%);
+    font-weight: bold;
+    width: 40%;
+}
+
+.dato {
+    width: 40%
+}
+
+@media (min-width: 1439px) {
+    img {
+        border-radius: 10px;;
+    }
+    section {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+    }
+    body {
+        margin-right: 300px;
+        margin-left: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: hsl(330, 89%, 93%);
+    }
+}
